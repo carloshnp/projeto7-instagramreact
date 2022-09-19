@@ -7,7 +7,7 @@ function Usuario(props) {
             <a href=""><img onClick={() => setProfileImg(prompt('Insira uma URL de foto para seu perfil!))} src={profileImg} /></a>
             <div class="account-user">
                 <a href=""><p><strong>catanacomics</strong></p></a>
-                <p class="alt-text"><ion-icon onClick={() => setUser(prompt('Insira um novo nome de usuário!))} name="pencil-outline"></ion-icon></p>
+                <p class="alt-text">{user}<ion-icon onClick={() => setUser(prompt('Insira um novo nome de usuário!'))} name="pencil-outline"></ion-icon></p>
             </div>
         </div>
     )

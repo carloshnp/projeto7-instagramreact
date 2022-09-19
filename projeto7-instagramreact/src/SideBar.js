@@ -1,3 +1,5 @@
+import React from "react";
+
 function Usuario(props) {
 
     const [user, setUser] = React.useState('catanacomics') 

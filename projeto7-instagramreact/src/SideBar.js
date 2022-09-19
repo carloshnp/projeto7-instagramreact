@@ -4,7 +4,7 @@ function Usuario(props) {
     const [profileImg, setProfileImg] = React.useState("img/catanacomics 1.png")
     return (
         <div class="account">
-            <a href=""><img onClick={() => setProfileImg(prompt('Insira uma URL de foto para seu perfil!))} src={profileImg} /></a>
+            <a href=""><img onClick={() => setProfileImg(prompt('Insira uma URL de foto para seu perfil!'))} src={profileImg} /></a>
             <div class="account-user">
                 <a href=""><p><strong>catanacomics</strong></p></a>
                 <p class="alt-text">{user}<ion-icon onClick={() => setUser(prompt('Insira um novo nome de usuário!'))} name="pencil-outline"></ion-icon></p>

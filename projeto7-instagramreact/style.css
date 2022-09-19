@@ -1,0 +1,499 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+ion-icon {
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+strong {
+    font-weight: 500;
+}
+
+video {
+    max-width: 614px;
+    max-height: auto;
+}
+
+.vbar {
+    width: 1px;
+    height: 22px;
+    background-color: #DBDBDB;
+}
+
+.topbar {
+    background-color: #FFFFFF;
+    height: 54px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #DBDBDB;
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+}
+
+.topbar-content {
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.logo {
+    width: 146px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.logo-toggle {
+    display: none;
+}
+
+.search {
+    margin-top: 13px;
+}
+
+.search input[type=text] {
+    background-color: #FAFAFA;
+    height: 28px;
+    width: 215px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #979797;
+    outline: none;
+}
+
+.icon-menu {
+    width: 148px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    width: 935px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 34px 0px 0px 0px;
+    position: relative;
+    top: 54px;
+}
+
+.content {
+    width: 614px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.stories {
+    background-color: #FFFFFF;
+    width: 614px;
+    height: 118px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.story-container {
+    display: flex;
+    top: 0px;
+    left: 0px;
+}
+
+.arrow {
+    position: absolute;
+    right: 5px;
+    top: 43px;
+    z-index: 2;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.story{
+    margin: 15px 0px 15px 14px;
+    width: 66px;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 12px;
+}
+
+.story-border {
+    height: 66px;
+    position: relative;
+}
+
+.story-user {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+.posts {
+    width: 614px;
+}
+
+.post {
+    background-color: #FFFFFF;
+    width: 614px;
+    margin-bottom: 30px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.post-topbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-topbar ion-icon {
+    margin-right: 15px;
+}
+
+.post-topbar-user {
+    margin-left: 15px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-topbar-user p {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.reaction-bar {
+    height: 22px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interactions {
+    width: 93px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.save {
+    margin-right: 15px;
+}
+
+.comments-bar {
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.comments-info {
+    height: 34px;
+    margin-left: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+}
+
+.comments-info img {
+    height: 20px;
+}
+
+.comments-info p {
+    margin-left: 5px;
+}
+
+.comments {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    position: absolute;
+    top: 24px;
+    left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comments user {
+    font-weight: 500;
+}
+
+.comment {
+    width: 100%;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-icon:hover {
+    color: red;
+    transition: 300ms;
+}
+
+.comments-box {
+    height: 40px;
+    width: 100%;
+    border-top: 1px solid #DBDBDB;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments-box ion-icon {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.comments-box input {
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.comments-box button {
+    margin-top: 11px;
+    margin-right: 15px;
+    height: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #B2DFFC;
+    border: none;
+    background-color: transparent;
+}
+
+.comments-box button:hover {
+    cursor: pointer;
+    transition: 300ms;
+    color: #0095F6;
+}
+
+.sidebar {
+    width: 293px;
+    display: flex;
+    flex-direction: column;
+    margin: 23px 0px 0px 0px;
+    position: relative;
+}
+
+.sidebar-content {
+    position: fixed;
+
+}
+
+.account {
+    width: 293px;
+    height: 56px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.account-user {
+    margin-left: 15px;
+    font-size: 14px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.suggestions {
+    width: 293px;
+    height: 256px;
+}
+
+.suggestions-header {
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.suggestion-accounts {
+    height: 32px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggestion-account-user {
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestion-account-user img {
+    margin-right: 11px;
+}
+
+.suggestion-account-username {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.suggestion-account-user-alt-text {
+    font-size: 11px;
+    font-weight: 400;
+    color: #8E8E8E;
+}
+
+.suggestion-account-user-follow {
+    font-size: 12px;
+    font-weight: 500;
+    color: #139EF2;
+}
+
+.copyright {
+    width: 300px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #8E8E8E;
+    margin-bottom: 18px;
+}
+
+.bottom-bar {
+    display: none;
+}
+
+.alt-text {
+    color: #8E8E8E;
+}
+
+@media (max-width:935px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 614px) {
+    .topbar-toggle {
+        display: none
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-toggle {
+        display: inherit;
+    }
+
+    .main {
+        width: 100%;
+        margin-top: 0px;
+        flex-direction: column;
+    }
+
+    .stories {
+        width: 100%;
+        margin-bottom: 0px;
+        border: 0px;
+        background-color: #Fafafa;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .content, .posts, .post, .post-topbar, .reaction-bar, .comments-bar {
+        width: 100%;
+    }
+
+    .posts {
+        margin-bottom: 54px;
+    }
+
+    .post-img img {
+        max-width:100%;
+    }
+
+    .post {
+        border-width: 1px 0px;
+        border-radius: none;
+    }
+
+    .bottom-bar {
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 54px;
+        border-top: 1px solid #DBDBDB;
+        position: fixed;
+        z-index: 3;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .bottom-bar-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 16px 19px;
+    }
+
+}

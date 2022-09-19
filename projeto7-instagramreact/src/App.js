@@ -1,6 +1,8 @@
 import NavBar from "./NavBar";
 import Stories from "./Stories";
 import Posts from "./Posts";
+import BottomBar from "./BottomBar";
+import SideBar from "./SideBar";
 
 export default function App() {
     return (
@@ -17,7 +19,9 @@ function Corpo() {
             <div class="content">
                 <Stories/>
                 <Posts/>
+                <BottomBar/>
             </div>
+            <SideBar/>
         </div>
     );
 }

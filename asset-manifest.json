@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/projeto7-instagramreact/static/js/main.f071d9b2.chunk.js",
+    "main.js.map": "/projeto7-instagramreact/static/js/main.f071d9b2.chunk.js.map",
+    "runtime-main.js": "/projeto7-instagramreact/static/js/runtime-main.20005f3d.js",
+    "runtime-main.js.map": "/projeto7-instagramreact/static/js/runtime-main.20005f3d.js.map",
+    "index.html": "/projeto7-instagramreact/index.html"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.20005f3d.js",
+    "static/js/main.f071d9b2.chunk.js"
+  ]
+}
